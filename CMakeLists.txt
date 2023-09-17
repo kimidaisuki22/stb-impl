@@ -12,6 +12,7 @@ target_sources(stb-impl  PRIVATE
 find_package(Stb REQUIRED)
 target_include_directories(stb-impl PRIVATE
     $<BUILD_INTERFACE:${Stb_INCLUDE_DIR}>
+    $<INSTALL_INTERFACE:include>
 )
 
 include(CPack)
