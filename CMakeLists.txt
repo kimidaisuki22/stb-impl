@@ -10,7 +10,7 @@ target_sources(stb-impl  PRIVATE
 )
 
 find_package(Stb REQUIRED)
-target_include_directories(stb-impl PRIVATE
+target_include_directories(stb-impl PUBLIC
     $<BUILD_INTERFACE:${Stb_INCLUDE_DIR}>
     $<INSTALL_INTERFACE:include>
 )
